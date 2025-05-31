@@ -67,7 +67,7 @@ watcher.on('add', async (filePath) => {
     fs.renameSync(filePath, newFilePath);
     console.log(`Successfully renamed to: ${newName}`);
 
-    // Uploading
+    // Uploading - Remove this if you don't want to upload server
     console.log("Uploading to server...");
     const form = new FormData();
     form.append('image', fs.createReadStream(newFilePath), newName);
@@ -86,6 +86,7 @@ watcher.on('add', async (filePath) => {
         console.log('Copied URL to clipboard!');
       }
     });
+    // Comment till here if you want to disable.
 
   } catch (err) {
     console.error(`Error processing image: ${err.message}`);
