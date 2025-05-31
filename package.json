@@ -1,0 +1,32 @@
+{
+  "name": "chokidar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.9.0",
+    "chokidar": "^4.0.3",
+    "clipboardy": "^4.0.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "form-data": "^4.0.2",
+    "mime-types": "^3.0.1",
+    "multer": "^2.0.0"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/axios/dist/**/*"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  }
+}

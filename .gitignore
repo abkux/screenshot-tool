@@ -1,0 +1,6 @@
+dist
+node_modules
+other
+logo.ico
+package-lock.json
+.env
